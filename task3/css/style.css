@@ -1,0 +1,678 @@
+*{
+    box-sizing: border-box;
+   
+    padding: 0;
+}
+body{
+    height: 4000px;
+   
+}
+.div1{
+    background-image:url(../images/black.jpg);
+    width: 100%;
+    height: 700px;
+    left: 0;
+    top: 0;
+   
+
+}
+.header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: black;
+    opacity: 0.6;
+    
+    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+  
+    
+}
+.header img{
+    height: 60px;
+    width: 90px;
+    margin-left: 40px;
+    position: absolute;
+    z-index: 2;
+}
+.list{
+    list-style: none;
+    float: right;
+    margin-right: 150px;
+}
+.list li{
+    display: inline;
+    margin-left: 25px;
+    color: red;
+    font-size: 23px;
+    font-weight: bold;
+}
+.list li a{
+    text-decoration: none;
+    color: red;
+
+}
+.div1 h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    z-index: 0;
+    
+}
+.text{
+    margin-top: 250px;
+    position: absolute;
+    text-align: center;
+    margin-left: 375px;
+    height: 300px;
+   z-index: 0;
+
+}
+.text p{
+    color: blanchedalmond;
+    font-weight: bold;
+    position: relative;
+    margin-top: -30px;
+    z-index: 0;
+}
+.text button{
+    height: 55px;
+    width: 115px;
+    border-radius: 10%;
+    margin-left: 5px;
+    z-index: 0;
+}
+.button1{
+    color: black;
+    background-color: azure;
+    font-size: 17px;
+    font-weight: 600;
+    z-index: 0;
+
+}
+.button2{
+    color: white;
+    background-color: blue;
+    font-size: 17px;
+    font-weight: 600;
+    z-index: 0;
+
+}
+.container{
+    width: 80%;
+   margin: auto;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  top: 4000px;
+  z-index: 0;
+}
+.team_item{
+    float: left;
+    width: 30%;
+    background-color: grey;
+    padding: 14px 18px;
+    text-align: center;
+    z-index: 0;
+ 
+}
+#bb{
+    margin: 0% 5%;
+}
+.team_img{
+
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+.team_img img{
+    width: 100%;
+}
+.team_overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.team_overlay a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 170, 255);
+    color: white;
+    font-size: 23px;
+    margin-left: auto;
+}
+
+.team_overlay a i{
+    line-height: 40px;
+   
+}
+.team_nfo_title{
+text-transform: uppercase;
+padding: 12px 0;
+}
+.teaminfo_sp1{
+    text-transform: capitalize;
+    color: black;
+}
+.team_item:hover .team_nfo_title{
+color: aliceblue;
+}
+.team_item:hover .teaminfo_sp1{
+    color: blue;
+}
+.our_team{
+  text-transform: capitalize;  
+  position: relative;
+  background-color: white;
+  color: black;
+  top: 3900px;
+  text-align: center;
+  margin: auto;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+.team{
+    width: 70px;
+    height: 6px;
+   background-color: blue;
+   position: relative;
+   top: 3900px;
+}
+.team_item:hover .team_overlay{
+    visibility: visible;
+    opacity: 0.5;
+
+}
+.team_img::after{
+    width: 100%;
+    height: 0;
+    position:absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 3s;
+}
+.team_img:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+.welcome{
+    width: 85%;
+    height: 300px;
+   margin: auto;
+ background-color: white;
+  
+  position: relative;
+  top: 90px;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  
+}
+.one{
+    background-color: white;
+    width: 340px;
+    height: 250px;
+    border-color: black;
+    border-style: solid;
+    float: left;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-width: 0.5px;
+
+}
+.fully h2{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.fully p{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    margin-top: -20px;
+   
+}
+.fully a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.fully i{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.two{
+    float: left;
+    background-color: white;
+    
+    width: 340px;
+    height: 250px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.three{
+    background-color: rgb(255, 255, 255);
+    
+    width: 340px;
+    height: 250px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px; 
+   
+}
+.welcome_to{
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 400px;
+}
+.to{
+    margin-top: 10px;
+    width: 70px;
+    height: 6px;
+   background-color: blue;
+}
+
+.one::after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 3s;
+}
+.one:hover::after{
+    width: 400px;
+    height: 300px;
+    opacity: 0.5;
+    transition: 1s;
+}
+.two::after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: "";
+    top: 0;
+    left: 400px;
+    background-color: black;
+    opacity: 0;
+    transition: 3s;
+}
+.two:hover::after{
+    width: 400px;
+    height: 300px;
+    opacity: 0.5;
+    transition: 1s;
+}
+.three::after{
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    content: "";
+    top: 0;
+    left: 800px;
+    background-color: black;
+    opacity: 0;
+    transition: 3s;
+}
+.three:hover::after{
+    width: 400px;
+    height: 300px;
+    opacity: 0.5;
+    transition: 1s;
+    z-index: 2;
+}
+.featured_works{
+  width: 100%; 
+  height: 1000px; 
+  background-color: rgb(157, 152, 152);
+  position: relative;
+  top: 200px;
+  overflow: hidden;
+  margin-bottom: -50px;
+}
+.f{
+    
+    font-size: 30px;
+    margin-top: -700;
+  position: absolute;
+  text-align: center;
+ margin-left: 550px;
+
+}
+.fw{
+  width: 80px;
+  height: 7px; 
+  background-color: blue;
+  color: blue;
+  margin-top: -570px;
+  position: absolute;
+  margin-left: 650px; 
+}
+.containers{
+    width: 80%;
+    margin: auto;
+}
+.featured{
+    position: relative;
+
+}
+
+.featured_item{
+    float: left;
+    background-color: aliceblue;
+    position: relative;
+    top: -500px;
+    width: 30%;
+    padding: 14px 16px;
+    text-align: center;
+    margin-bottom: 10;
+}
+.ww{
+    margin: 0px 5%;
+}
+.featured_item i{
+    background-color: white;
+    font-size: 30px;
+}
+.featured_itemtwo{
+    float: left;
+    background-color: aliceblue;
+    position: relative;
+    top: -500px;
+    width: 30%;
+    padding: 14px 16px;
+    text-align: center;
+
+}
+.vv{
+    margin: 0px 5%;
+}
+
+.featured_itemtwo i{
+    background-color: white;
+    font-size: 30px;
+}
+.featured_img{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.featured_img img{
+    width: 100%;
+    
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.4;
+    visibility: hidden;
+
+}
+.featured_item:hover .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0.4;
+    visibility: visible;
+
+}
+.featured_itemtwo:hover .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.4;
+    visibility: visible;
+
+}
+
+.featured_img p{
+    font-weight:900;
+    font-size: 25px;
+    color:blue;
+}
+.featured_img b{
+    font-family: bold;
+    
+    color:red;
+    font-size: 20px;
+}
+.button1:hover{
+opacity: 0.5;
+}
+.button2:hover{
+    opacity: 0.5;
+}
+.offer{
+    font-weight: 900;
+    font-size: 50px;
+    margin: auto;
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 2200px;
+    
+}
+.offerr{
+    width: 80px;
+  height: 7px; 
+  background-color: blue;
+  color: blue;
+  margin-top: 450px;
+  position: absolute;
+  margin-left: 680px; 
+}
+.cont{
+    width: 85%;
+    height: 250px;
+   margin: auto;
+ background-color:white;
+  
+  position: relative;
+  top: 90px;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+.firstt{
+    background-color:white;
+    width: 340px;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+    float: left;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-width: 0.5px;
+    z-index: -1;
+}
+
+.firstt:hover h2{
+    color: white;
+}
+.firstt:hover{
+    background-color: black;
+}
+
+.firstt h2{
+    font-weight: 900;
+    font-size: 30px;
+ }
+ .firstt p{
+    color: grey;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+ }
+ .firstt i{
+    color: blue;
+    font-size: 30px;
+    position: relative;
+    top: 55px;
+    right: 140px;
+ }
+ .sec{
+    float: left;
+ }
+
+ .conttwo{
+    width: 85%;
+    height: 250px;
+   margin: auto;
+ background-color: white;
+  
+  position: relative;
+  top: 90px;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+.firsttwo{
+    background-color:white;
+    width: 340px;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+    float: left;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-width: 0.5px;
+}
+
+.firsttwo:hover h2{
+    color: white;
+}
+.firsttwo:hover{
+    background-color: black;
+}
+.firsttwo h2{
+    font-weight: 900;
+    font-size: 30px;
+ }
+ .firsttwo p{
+    color: grey;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+ }
+ .firsttwo i{
+    color: blue;
+    font-size: 30px;
+    position: relative;
+    top: 55px;
+    right: 140px;
+ }
+ .secondtwo{
+   float: left;
+ }
+ .secsix{
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    top: 200px;
+    height: 300px;
+ }
+ .overlaysix{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+ .item i{
+    font-size: 50px;
+    color: blue;
+   
+ }
+ .item h1{
+  
+ }
+ .item b{
+   
+    color: white;
+    position: relative;
+  
+ }
+ .item{
+    margin-top: 40px;
+    float: left;
+    width: 20%;
+    margin-left: 2.3%;
+    text-align: center;
+ }
+ .footer{
+    background-color: grey;
+    width: 100%;
+    height: 400px;
+    margin-top: 1000px;
+    position: relative;
+ }
+ .ima{
+   margin-left:42% ;
+   margin-bottom: 200px;
+   padding-top: 60px;
+ }
+.footer i{
+    font-size: 50;
+    
+    margin-left: 10px;
+    position:relative;
+    border-radius: 50%;
+    bottom: 50%;
+    margin-bottom: 170px;
+    left: 550px;
+    padding-top:30px ;
+    color: white;
+   
+
+}
+.footer i:hover{
+    color: blue;
+}
+.footer p{
+    margin-top:-360px;
+   color: white;
+   margin-left: 480px;
+}
